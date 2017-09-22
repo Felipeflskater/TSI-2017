@@ -1,0 +1,56 @@
+﻿<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tritium Skateshop - Home</title>
+        <link rel="stylesheet" type="text/css" href="estilo.css" media="all">
+    </head>
+    <body>
+        <div id="principal">
+                <div id="cabecalho"><h1 id="titulo">Tritium Skateshop</h1></div>
+                <div id="lateralesquerda"> 
+                    <a class="menu" href="index.html">Pagina inicial</a>
+                    <a class="menu"href="encomenda.html">Faça sua encomenda</a>
+                    <a class="menu"href="produto.html">O produto</a>
+                    <a class="menu"href="contato.html">Fale conosco</a>
+                    <a class="menu"href="localizacao.html">Onde comprar</a>
+                </div>
+                <div id="centro">
+                    <form id="form" role="form" method="post" action="#">
+                        <h2>Dados da compra</h2>
+                        <p>Dados pessoais</p>
+                        <input type="text" class="formulario" id="nome" name="nome" placeholder="Digite Seu Nome:" required>
+                        <input type="text" class="formulario" id="email" name="email" placeholder="Digite seu E-mail:" required>
+                        <input type="text" class="formulario" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+                        <input type="text" class="formulario" id="produto" name="produto" placeholder="Codigo do produto" required>
+                        <input type="text" class="formulario" id="telefone" name="telefone" placeholder="Digite seu Telefone: " required>
+                        <p>Endereço</p>
+                          <input type="text" class="formulario" id="CEP" name="CEP" placeholder="Digite seu CEP: " required>
+                          <input type="text" class="formulario" id="Cidade" name="Cidade" placeholder="Digite sua Cidade: " required>
+                          <input type="text" class="formulario" id="Endereço" name="Endereço" placeholder="Digite seu Endereço: " required>
+                        <p>Forma de pagamento</p>
+                        <select>
+                            <option value="boleto">Boleto Bancario</option>
+                            <option value="deposito">Deposito em conta</option>
+                            <option value="credito">Cartão de credito</option>
+                            <option value="debito">Cartão de debito</option>
+                          </select> 
+                          <p>Numero do cartão</p>
+                          <input type="text" class="formulario" id="numero" name="numero" placeholder="Digite o numero do cartão: " required>
+                   <button type="submit" name="submit" class="botao">Confirmar Pedido</button>  
+               </form>
+                </div>
+                <div id="lateraldireita">
+                    <a href="#"><img id="propaganda1" src="ad/4.png" alt="HP"></a>
+                        <a href="#"><img id="propaganda2" src="ad/3.jpg" alt="Red Bull"></a>
+                </div>
+                <div id="rodape">
+                    <h3>Redes sociais</h3>
+                    <a href="https://www.facebook.com/"><img src="icones/facebook.png" alt="Facebook" id="redes" url="#"></a>
+                    <a href="https://twitter.com/login?lang=pt"><img src="icones/twitter.png" alt="Twitter" id="redes" url="#"></a>
+                    <a href="https://www.linkedin.com/"><img src="icones/link.png" alt="Linkedin" id="redes" url="#"></a>
+                    <a href="https://www.instagram.com/?hl=pt-br"><img src="icones/insta.png" alt="Instagram" id="redes" url="#"></a>
+                </div>
+        </div>
+    </body>
+</html>
