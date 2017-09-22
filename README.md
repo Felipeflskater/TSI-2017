@@ -1,2 +1,2 @@
 # TSI-2017
-Exercicios do TSI
+Exercicios e pequenos trabalhos feitos no curso TSI
