@@ -2,12 +2,16 @@
 <html>
 <head>
 <title></title>
-<meta charset="utf-8">
+<meta charset="utf-8"/>
 <style type="text/css">
-html,body {
+html,body{
 	margin:0;
 	width:100%;
 	height:100%;
+}
+@font-face{
+	font-family:snow;
+	src:url("SnowtopCaps.otf");
 }
 .fullscreen-bg {
     position: fixed;
@@ -26,16 +30,41 @@ html,body {
     height: auto;
 }
 header{
+	float:left;
 	background-color:blue;
 	width: 100vw;
-	height: 15vh;
+	height: 20vh;
 	opacity: .7;
 }
+article{
+	float:left;
+	background-color:white;
+	width:100vw;
+	height:65vh;
+	opacity:.7;
+}
+footer{	
+	float:left;
+	background-color:blue;
+	width:100vw;
+	height:15vh;
+	opacity:.7;
+	}
+	.titulo{
+		font-family:snow;
+		font-size:70px;
+		text-align:center;
+	}
+	p{font-family:sans-serif;
+		font-size:70px;
+		text-align:center;
+		float:center;
+		}
 </style>
 </head>
 <body>
-<header>cabeçalho</header>
-<article>conteudo</article>
+<header><h1 class="titulo";>topo</header>
+<article><p>Acima de tudo, e fundamental ressaltar que a mobilidade dos capitais internacionais obstaculiza a apreciacao da importancia das posturas dos orgaos dirigentes com relacao as suas atribuicoes.</p></article>
 <footer>rodapé</footer>
 <div class="fullscreen-bg">
     <video loop muted autoplay poster="cuphead.jpg" class="fullscreen-bg__video">
