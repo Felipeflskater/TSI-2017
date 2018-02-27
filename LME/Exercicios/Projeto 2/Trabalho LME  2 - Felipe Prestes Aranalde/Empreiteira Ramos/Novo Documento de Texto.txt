@@ -1,2 +1,0 @@
- <h1>A Empresa</h1>
-                <p>A Empreiteira Ramos é uma qualificada empresa do ramo de construções, que desde 2016 trabalha para tornar o seu sonho realidade. A empresa conta com uma equipe altamente qualificada, capaz de dar ao cliente um atendimento diferenciado, e executando sua obra da fundação a entrega das chaves. </p>
