@@ -3,7 +3,8 @@ insert into cep (cep, nm_rua, nm_cidade) values ('95010100','Rua das Flores','Po
 insert into cep (cep, nm_rua, nm_cidade) values ('96015360','Praça Vinte de Setembro','Pelotas');
 insert into cep (cep, nm_rua, nm_cidade) values ('96015670','Rua Major Cícero','Pelotas');
 insert into cep (cep, nm_rua, nm_cidade) values ('96020780','Rua Padre Felício','Pelotas');
-													      nm_cliente, cd_cliente, sexo, nr_residencia, complemento, cep, cpf, profissao							
+alter table clientes alter column nm_cliente type varchar(40);
+alter table clientes add column profissao varchar (25);						
 insert into clientes (nm_cliente, cd_cliente, sexo, nr_residencia, complemento, cep, cpf, profissao) values ('João da Silva', 10, 'M', 2345, 201, '96015360','64466986020', 'Professor');
 insert into clientes (nm_cliente, cd_cliente, sexo, nr_residencia, complemento, cep, cpf, profissao) values ('Pedro Vasconcelos', 20, 'M', 56, null, '96020780','62066456789', 'Empresário');
 insert into clientes (nm_cliente, cd_cliente, sexo, nr_residencia, complemento, cep, cpf, profissao) values ('Ana Clara Barroso', 30, 'M', 56, null, '96020780','23456786020', 'Dentista');
@@ -15,7 +16,7 @@ insert into telefone (cd_cliente, nr_telefone) values (20, '34535566');
 insert into telefone (cd_cliente, nr_telefone) values (20, '91232132');
 insert into telefone (cd_cliente, nr_telefone) values (40, '34225678');
 insert into telefone (cd_cliente, nr_telefone) values (50, '99821111');
-
+ALTER TABLE public.produto RENAME qtd_estoque  TO qtd_produto;
 insert into produto (cd_produto, nm_produto, vl_unitario, qtd_produto) values (1, 'Lápis', 1.5, 100);
 insert into produto (cd_produto, nm_produto, vl_unitario, qtd_produto) values (2,'Borracha',1.00, 80);
 insert into produto (cd_produto, nm_produto, vl_unitario, qtd_produto) values (3,'Caderno',15.00, 200);
@@ -24,7 +25,7 @@ insert into produto (cd_produto, nm_produto, vl_unitario, qtd_produto) values (5
 insert into produto (cd_produto, nm_produto, vl_unitario, qtd_produto) values (6,'régua',2.00, 33);
 insert into produto (cd_produto, nm_produto, vl_unitario, qtd_produto) values (7,'marcador de texto',5.00, 70);
 insert into produto (cd_produto, nm_produto, vl_unitario, qtd_produto) values (8,'clips',6.00, 180);
-
+alter table vendedor add column salario numeric;
 insert into vendedor (cd_vendedor, nm_vendedor, salario) values (100,'João Silveira',890.00);
 insert into vendedor (cd_vendedor, nm_vendedor, salario) values (200,'Paula Maia', 16500.00);
 insert into vendedor (cd_vendedor, nm_vendedor, salario) values (300, 'Batista', 1050.00);

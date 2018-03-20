@@ -1,5 +1,5 @@
 Create table cep(
-cep char(8);
+cep char(8),
 nm_rua varchar(50) not null,
 nm_cidade varchar(50) not null,
 primary key (cep));
@@ -14,6 +14,7 @@ cpf varchar (11) unique not null,
 cep char(8),
 primary key(cd_cliente),
 foreign key (cep) references cep);
+
 
 Create table Telefone(
 nr_telefone char(8),
