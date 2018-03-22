@@ -16,6 +16,7 @@ where c.cd_cliente=pe.cd_cliente and pe.nr_pedido=pp.nr_pedido and pp.cd_produto
 select nm_produto from produto p , clientes c, pedido pe,pedido_produto pp 
 where c.cd_cliente=pe.cd_cliente and pe.nr_pedido=pp.nr_pedido and pp.cd_produto =  p.cd_produto and nm_cliente like '%Ana Clara%'
 -- ilike (somente postgre)
+
 select nm_produto from produto p , clientes c, pedido pe,pedido_produto pp 
 where c.cd_cliente=pe.cd_cliente and pe.nr_pedido=pp.nr_pedido and pp.cd_produto =  p.cd_produto and nm_cliente ilike '%Ana Clara Barroso%'
 ---------------------------------------------------------------------------------------------------------------------------------------
