@@ -32,6 +32,9 @@
 --EX16
     update produto set vl_unitario=vl_unitario+(vl_unitario*10/100) where cd_produto=3
 --EX17
+    select valunitario,* from produto where cd_produto=3
+--EX18
+    select * from clientes where lone like '%A%'
 
 
 ALTER TABLE public.produto RENAME qtd_estoque  TO qtd_produto;
